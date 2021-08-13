@@ -1,9 +1,11 @@
+package solutions;
+
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class Graph{
+class GraphSolution{
   private static class Edge{
     int weight;
     int source;
@@ -17,7 +19,7 @@ class Graph{
   ArrayList<Edge> edges = new ArrayList<>();
   int vertexNumber;
   //n is the number of vertices
-  public Graph(List<Edge>  e, int n) {
+  public GraphSolution(List<Edge>  e, int n) {
     this.edges.addAll(e);
     vertexNumber = n;
   }
@@ -68,7 +70,7 @@ class Graph{
     list.add(new Edge(1,4,2));
     list.add(new Edge(3,2,5));
     list.add(new Edge(4,3,-3));
-    Graph g = new Graph(list, 5);
+    GraphSolution g = new GraphSolution(list, 5);
     //should output 1
     System.out.println(g.calculateDistanceBellmanFord(0,4));
   }

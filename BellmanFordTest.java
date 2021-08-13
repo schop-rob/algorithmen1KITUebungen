@@ -33,7 +33,7 @@ class Graph{
 
   //Berechne die Länge des kürzesten Wegs, indem du Bellman-Ford anwendest
   public String calculateDistanceBellmanFord(int start, int target) {
-    
+    return "Lösung";
   }
 
   public static void main(String[] args) {
