@@ -29,6 +29,5 @@ for i in range(6):
         numbers.append(newNum)
         print(f"insert({newNum})")
     else:
-        newNum = numbers[random.randrange(len(numbers))]
-        numbers.remove(newNum)
-        print(f"remove({newNum})")
+        numbers.pop(0)
+        print("deleteMin()")
