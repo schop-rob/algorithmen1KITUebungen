@@ -16,7 +16,8 @@ public class ArrayAlgorithm2 {
     int midIndex = startIndex + ((endIndex - startIndex) / 2);
     mergeSort(numb, startIndex, midIndex);
     mergeSort(numb, ++midIndex, endIndex);
-
+    //ich hab vergessen das fertig zu machen ^^
+  
     
   }
 
