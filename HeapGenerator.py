@@ -3,7 +3,7 @@
 import argparse
 import random
 parser = argparse.ArgumentParser(description="Manipulieren von Anzahl der Aufgaben")
-parser.add_argument("--tasks", default = 6, help = "Anzahl Aufgaben, die generiert werden sollen")
+parser.add_argument("--tasks", default = 6, help = "Anzahl Aufgaben, die generiert werden sollen, zum Beispiel:\n--tasks=4")
 args = parser.parse_args()
 val = int(input("Wie lang soll der Heap sein?\n"))
 maxNumber = int(input("Wie groß darf eine Zahl maximal sein?\n"))
