@@ -1,5 +1,10 @@
-from hashlib import new
+#author Robin Schöppner
+#version 2
+import argparse
 import random
+parser = argparse.ArgumentParser(description="Manipulieren von Anzahl der Aufgaben")
+parser.add_argument("--tasks", default = 6, help = "Anzahl Aufgaben, die generiert werden sollen")
+args = parser.parse_args()
 val = int(input("Wie lang soll der Heap sein?\n"))
 maxNumber = int(input("Wie groß darf eine Zahl maximal sein?\n"))
 if (maxNumber < val):
@@ -20,7 +25,7 @@ if (result != "Y"):
     print("Schade")
     exit()
 
-for i in range(6):
+for i in range(int(args.tasks)):
     value = bool(random.getrandbits(1))
     if (value):
         newNum = random.randrange(maxNumber)
