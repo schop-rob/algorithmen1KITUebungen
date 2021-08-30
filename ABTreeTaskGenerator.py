@@ -5,7 +5,7 @@ parser.add_argument("--tasks", default = 15, help = "Anzahl Aufgaben, die generi
 args = parser.parse_args()
 
 numbers = []
-
+print("Starte mit leerem (a,b)-Baum")
 for i in range(int(args.tasks)):
     value = bool(random.getrandbits(1))
     if (value | len(numbers) < 2):
