@@ -1,7 +1,7 @@
 import argparse
 import random
 parser = argparse.ArgumentParser(description="Manipulieren von Anzahl der Aufgaben")
-parser.add_argument("--tasks", default = 6, help = "Anzahl Aufgaben, die generiert werden sollen, zum Beispiel:\n--tasks=4")
+parser.add_argument("--tasks", default = 15, help = "Anzahl Aufgaben, die generiert werden sollen, zum Beispiel:\n--tasks=4")
 args = parser.parse_args()
 
 numbers = []
